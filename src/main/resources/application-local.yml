@@ -1,0 +1,13 @@
+server:
+  servlet:
+    context-path: /order-service
+  port: 9091
+  
+spring:
+  application:
+    name: order-service
+opentracing:
+  jaeger:
+    udp-sender:
+      host: localhost
+      port: 6831

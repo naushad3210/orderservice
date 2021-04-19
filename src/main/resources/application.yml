@@ -1,0 +1,13 @@
+server:
+  servlet:
+    context-path: ${context_path}
+  port: ${port}
+
+spring:
+  application:
+    name: order-service
+opentracing:
+  jaeger:
+    udp-sender:
+      host: ${jaeger_udp_sender_host}
+      port: ${jaeger_udp_sender_port}
